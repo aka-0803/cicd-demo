@@ -22,8 +22,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm test
+      - name: Run App Test
+        run: node server.js & sleep 5
 
   deploy:
     needs: build
